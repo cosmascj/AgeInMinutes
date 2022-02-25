@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GetMinutesAge</string>
+    <string name="cal_age">CALCULATE YOUR AGE</string>
+    <string name="age">AGE</string>
+    <string name="select_date">Select Date</string>
+    <string name="selected_date">Selected Date</string>
+    <string name="age_in_minutes">Age in minutes</string>
+    <string name="in_minutes">IN MINUTES</string>
+</resources>

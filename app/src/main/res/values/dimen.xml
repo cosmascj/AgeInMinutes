@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="root_layout_padding">16dp</dimen>
+    <dimen name="textSize_calculate">25sp</dimen>
+    <dimen name="calculate_text_marginTop">15dp</dimen>
+    <dimen name="age_text_marginTop">15dp</dimen>
+    <dimen name="age_text_padding">15dp</dimen>
+    <dimen name="textSize_in_minutes">25dp</dimen>
+    <dimen name="in_minutes_marginTop">15dp</dimen>
+
+    <dimen name="textSize_Age">25sp</dimen>
+    <dimen name="textSize_selected_date">18sp</dimen>
+    <dimen name="selected_date_marginTop">20dp</dimen>
+    <dimen name="Button_datePicker_marginTop">15dp</dimen>
+    <dimen name="textSize_button_datePicker">20sp</dimen>
+    <dimen name="selected_date_in_minutes_marginTop">20dp</dimen>
+    <dimen name="textSize_selected_date_in_minutes">35sp</dimen>
+    <dimen name="textSize_age_in_minutes">18sp</dimen>
+
+
+</resources>
