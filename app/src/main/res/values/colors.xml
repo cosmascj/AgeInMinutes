@@ -11,4 +11,11 @@
     <color name="backgroundColor">#FEF1E0</color>
     <color name="ageTextBackgroundColor">#C846DCE0</color>
     <color name="lightGreyTextColor">#B7B7B7</color>
+    <color name="button_color_one">#ebab6f</color>
+    <color name="button_border_color">#1E847F</color>
+    <color name="intro_background_color">#5e3008</color>
+    <color name="profile_white_shade">#e2dfdf</color>
+    <color name="age_design_color">#1E847F</color>
+    <color name="statusBar_color">#ebab6f</color>
+
 </resources>
