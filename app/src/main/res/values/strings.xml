@@ -1,9 +1,18 @@
 <resources>
-    <string name="app_name">Age In Minutes</string>
+    <string name="app_name">Age Calculator</string>
     <string name="cal_age">CALCULATE YOUR AGE</string>
-    <string name="age">AGE</string>
+    <string name="age">AGE IN MINUTES</string>
     <string name="select_date">Select Date</string>
     <string name="selected_date">Selected Date</string>
     <string name="age_in_minutes">Age in minutes</string>
     <string name="in_minutes">IN MINUTES</string>
+
+
+    <!-- Intro Screen -->
+
+    <string name="image_contentDescription">image</string>
+    <string name="let_s_get_started_text">Provide your details let\'s get started!</string>
+    <string name="intro_text_description">Collaborate and Plan Together Across Multiple Devices with DoMoreEveryDay Minimalist Interface.</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">Check Age</string>
 </resources>

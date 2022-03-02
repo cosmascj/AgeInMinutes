@@ -3,9 +3,11 @@ package com.example.getminutesage
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import org.w3c.dom.Text
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -13,20 +15,56 @@ class MainActivity : AppCompatActivity() {
 
   private  var tvSelectedDate: TextView? = null
     private  lateinit var tvSelectedDateInMinutes: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnDatePicker : Button = findViewById(R.id.btnDatePicker)
         tvSelectedDate= findViewById(R.id.tvSelectedDate)
         tvSelectedDateInMinutes = findViewById(R.id.tvSelectedDateInMinutes)
 
-        btnDatePicker.setOnClickListener {
-            clickDatePicker()
+        var intentValue =  intent.getStringExtra("DATE")
+
+       intentValue.toString()
+        if (intentValue != null) {
+            Log.d("u", intentValue)
         }
+
+       // tvSelectedDateInMinutes.apply { text= intentValue.toString() }
+
+
+       // var intentSecondValue =  intent.getStringExtra("NAME")
+
+
+
+       // tvSelectedDate?.apply { text= intentSecondValue.toString() }
+
+
+        val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
+
+       var theDate = sdf.parse("$intentValue")
+        Log.d("uu", theDate.toString())
+
+        val selectedDateInMinutes = theDate.time/ 60000
+
+        Log.d("uuu", selectedDateInMinutes.toString())
+
+
+       var currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
+        Log.d("uuuu", currentDate.toString())
+
+       var currentDateInMinutes = currentDate.time/60000
+        Log.d("uuuuuu", currentDateInMinutes.toString())
+
+
+        val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
+        Log.d("uuu", differenceInMinutes.toString())
+
+
     }
 
 
+/*
     private fun clickDatePicker(){
 
         val myCalender = Calendar.getInstance()
@@ -37,7 +75,6 @@ class MainActivity : AppCompatActivity() {
         DatePickerDialog(this, { view, year, month, dayOfMonth ->
 
 
-           // Toast.makeText(this, "$year, $month", Toast.LENGTH_SHORT).show()
 
 
             val selectedDate = "$dayOfMonth/${month+1}/$year"
@@ -63,4 +100,5 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+*/
 }

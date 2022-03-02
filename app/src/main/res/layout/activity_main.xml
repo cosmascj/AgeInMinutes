@@ -10,47 +10,22 @@
     android:padding="@dimen/root_layout_padding"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/calculate_text_marginTop"
-        android:text="@string/cal_age"
-        android:textColor="@color/textColor"
-        android:textSize="@dimen/textSize_calculate"
-        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/age_text_marginTop"
+        android:layout_marginBottom="@dimen/age_text_marginButton"
         android:text="@string/age"
-        android:lineSpacingExtra="2dp"
+        android:lineSpacingExtra="1dp"
         android:padding="@dimen/age_text_padding"
         android:textColor="@color/white"
         android:textSize="@dimen/textSize_Age"
         android:background="@color/age_design_color"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/in_minutes_marginTop"
-        android:text="@string/in_minutes"
-        android:textColor="@color/textColor"
 
-        android:textSize="@dimen/textSize_age_in_minutes"
-        android:textStyle="bold" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnDatePicker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#929292"
-        android:background="@drawable/shape_button_rounded"
-        android:text="@string/select_date"
-        android:layout_marginTop="@dimen/Button_datePicker_marginTop"
-        android:textStyle="bold"
-        android:textSize="@dimen/textSize_button_datePicker"/>
     <TextView
         android:id="@+id/tvSelectedDate"
         android:layout_width="wrap_content"
