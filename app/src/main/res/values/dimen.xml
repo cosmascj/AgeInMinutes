@@ -5,7 +5,7 @@
     <dimen name="root_layout_padding">16dp</dimen>
     <dimen name="textSize_calculate">25sp</dimen>
     <dimen name="calculate_text_marginTop">15dp</dimen>
-    <dimen name="age_text_marginTop">15dp</dimen>
+    <dimen name="age_text_marginTop">30dp</dimen>
     <dimen name="age_text_padding">10dp</dimen>
     <dimen name="age_text_marginButton">15dp</dimen>
     <dimen name="textSize_in_minutes">25dp</dimen>

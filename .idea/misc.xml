@@ -3,8 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/custom_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/custom_launcher_two_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_app_icon_new.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_app_logo.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_tallydrawing.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_tallydrawingtwo.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.31434020996093753" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/custom_launcher_four.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/custom_launcher_two.xml" value="0.1" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_intro_icon.xml" value="0.1" />
       </map>
     </option>

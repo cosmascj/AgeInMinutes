@@ -3,5 +3,6 @@
     <string name="select_date">Select Date</string>
     <string name="app_name">Age Calculator</string>
     <string name="sign_up">Check Age</string>
+    <string name="my_profile">Age in Minutes</string>
 
 </resources>

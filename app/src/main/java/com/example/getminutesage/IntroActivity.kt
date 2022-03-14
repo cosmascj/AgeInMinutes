@@ -5,20 +5,25 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.Toast
+import androidx.activity.viewModels
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import java.text.SimpleDateFormat
 import java.util.*
 
-class IntroActivity : AppCompatActivity() {
 
-    private lateinit var introPicker: TextInputEditText
+class IntroActivity : AppCompatActivity() {
+    private val viewModel: SplashViewModel by viewModels()
+  //private val viewModel: SplashViewModel  by ViewModels()
+    private lateinit var introPicker: EditText
     private var doubleBackToExitPressedOnce = false
     private lateinit var openNextActivity: Button
 
@@ -27,6 +32,14 @@ class IntroActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+    installSplashScreen().apply {
+        setKeepOnScreenCondition{
+            viewModel.isLoading.value
+        }
+    }
+
         setContentView(R.layout.activity_intro)
         etName = findViewById(R.id.et_name)
         openNextActivity = findViewById(R.id.intro_btn_checkDate)
@@ -36,7 +49,14 @@ class IntroActivity : AppCompatActivity() {
             clickDatePicker()
         }
         openNextActivity.setOnClickListener {
+                if (TextUtils.isEmpty(introPicker.text.toString())){
+                    Toast.makeText(this, "You need to enter a date", Toast.LENGTH_LONG).show()
+
+                }
+            else{
+
             sendUserDate()
+                }
         }
     }
 
@@ -65,7 +85,7 @@ class IntroActivity : AppCompatActivity() {
             introPicker.setText(selectedDate)
 
             Toast.makeText(this, selectedDate, Toast.LENGTH_SHORT).show()
-            Log.d("check", selectedDate)
+           // Log.d("check", selectedDate)
 
             // tvSelectedDate?.setText(selectedDate)
             val sdf = SimpleDateFormat("dd/MM/yyy", Locale.ENGLISH)
